@@ -1,52 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>www.Fooodie.com</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-    />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body>
-    <!-- header starts here -->
-    <header>
-      <a href="#" class="logo"><i class="fas fa-utensils"></i>fooodie.</a>
-      <!-- Navigation starts here   -->
-      <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#dishes">Dishes</a>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#review">Review</a>
-        <a href="#order">Order</a>
-      </nav>
-      <!-- Navigation ends here  -->
-      <!-- Icons starts from here  -->
-      <div class="icons">
-        <i class="fas fa-bars" id="menu-bars"></i>
-        <i class="fas fa-search" id="search-icon"></i>
-        <a href="#" class="fas fa-heart"></a>
-        <a href="#" class="fas fa-shopping-cart"></a>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>www.Fooodie.com</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- header starts here -->
+  <header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>fooodie.</a>
+    <!-- Navigation starts here   -->
+    <nav class="navbar">
+      <a href="#home">Home</a>
+      <a href="#dishes">Dishes</a>
+      <a href="#about">About</a>
+      <a href="#menu">Menu</a>
+      <a href="#review">Review</a>
+      <a href="#order">Order</a>
+    </nav>
+    <!-- Navigation ends here  -->
+    <!-- Icons starts from here  -->
+    <div class="icons">
+      <i class="fas fa-bars" id="menu-bars"></i>
+      <i class="fas fa-search" id="search-icon"></i>
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-shopping-cart"></a>
+    </div>
+    <!-- Icons ends here  -->
+  </header>
+  <!-- header ends here  -->
+  <!-- search form  -->
+  <form action="" id="search-form">
+    <input type="search" name="" id="search-box" placeholder="Search Here..." />
+    <label for="search-box" class="fas fa-search"> </label>
+    <i class="fas fa-times" id="close"> </i>
+  </form>
+  <!-- search form ends here  -->
+
+  <!-- home section starts here -->
+  <section class="home" id="home">
+    <div class="swiper-container home-slider">
+      <div class="swiper-wrapper wrapper">
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span> Our Special Dish</span>
+            <h3>Sandwich Roll</h3>
+            <p>Salmon wrap sandwich roll with cheese vegetables.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img
+              src="https://img.freepik.com/free-photo/pita-stuffed-with-chicken-peppers_2829-17827.jpg?w=596&t=st=1675500078~exp=1675500678~hmac=1b2f5ca64f3cddf43e5fdacaa3deb03ec3810c7a2815a89027b8c5c921e1d948"
+              alt="salmon-wrap-sandwich-roll..." />
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span> Our Special Dish</span>
+            <h3>Pasta</h3>
+            <p>Penne pasta tomato sauce with chicken tomatoes.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img
+              src="https://img.freepik.com/free-photo/spaghetti-with-vegetablesbroccolitomatoespeppers-isolated-white-background_123827-21223.jpg?w=600&t=st=1675500154~exp=1675500754~hmac=6a06d6462855289d291efbe4accf1b59971f0539d9a2d7c0538e25ea6723597d"
+              alt="Penne-pasta-tomato-sauce-with-chicken-tomatoes..." />
+          </div>
+        </div>
+
+        <div class="swiper-slide slide">
+          <div class="content">
+            <span> Our Special Dish</span>
+            <h3>Biryani</h3>
+            <p>Indian chicken biryani served terracotta bowl with yogurt.</p>
+            <a href="#" class="btn">Order Now</a>
+          </div>
+          <div class="image">
+            <img
+              src="https://img.freepik.com/free-photo/indian-butter-chicken-isolated-white-background_123827-20396.jpg?w=596&t=st=1675499897~exp=1675500497~hmac=ca73972e631c0ec87c7071d76ec4ab4ced6a50a15ac70ea5aeaa9fa9c2c16717"
+              alt="Indian-chicken-biryani-served-terracotta-bowl-with-yogurt..." />
+          </div>
+        </div>
       </div>
-      <!-- Icons ends here  -->
-    </header>
-    <!-- header ends here  -->
-    <!-- search form  -->
-    <form action="" id="search-form">
-      <input
-        type="search"
-        name=""
-        id="search-box"
-        placeholder="Search Here..."
-      />
-      <label for="search-box" class="fas fa-search"> </label>
-      <i class="fas fa-times" id="close"> </i>
-    </form>
-    <!-- search form ends here  -->
-  </body>
-  <script src="./script.js"></script>
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
+  <!-- home section ends here  -->
+
+  <!-- dishes starts here  -->
+
+  <section class="dishes" id="dishes">
+    <h3 class="sub-heading">Our Dishes</h3>
+    <h3 class="heading">Popular Dishes</h3>
+
+    <div class="box-container">
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="https://images.pexels.com/photos/5031949/pexels-photo-5031949.jpeg?auto=compress&cs=tinysrgb&w=250"
+          alt="" />
+        <h3>Tasty Food</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>60.00 /-</span>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="https://images.pexels.com/photos/5031949/pexels-photo-5031949.jpeg?auto=compress&cs=tinysrgb&w=250"
+          alt="" />
+        <h3>Tasty Food</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <span>89.00 /-</span>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="https://images.pexels.com/photos/5031949/pexels-photo-5031949.jpeg?auto=compress&cs=tinysrgb&w=250"
+          alt="" />
+        <h3>Tasty Food</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>99.00 /-</span>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="https://images.pexels.com/photos/5031949/pexels-photo-5031949.jpeg?auto=compress&cs=tinysrgb&w=250"
+          alt="" />
+        <h3>Tasty Food</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>160.00 /-</span>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="https://images.pexels.com/photos/5031949/pexels-photo-5031949.jpeg?auto=compress&cs=tinysrgb&w=250"
+          alt="" />
+        <h3>Tasty Food</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>360.00 /-</span>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+      <div class="box">
+        <a href="#" class="fas fa-heart"></a>
+        <a href="#" class="fas fa-eye"></a>
+        <img src="https://images.pexels.com/photos/5031949/pexels-photo-5031949.jpeg?auto=compress&cs=tinysrgb&w=250"
+          alt="" />
+        <h3>Tasty Food</h3>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <span>270.00 /-</span>
+        <a href="#" class="btn">Add To Cart</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Dishes Ends here  -->
+
+  <!-- About section starts here  -->
+  <section class="about" id="about">
+    <h3 class="sub-heading">About Us</h3>
+    <h3 class="heading">Why Choose Us?</h3>
+
+    <div class="row">
+      <div class="image">
+        <img
+          src="https://img.freepik.com/free-photo/hand-holding-chopsticks-with-dumpling_23-2148249238.jpg?w=896&t=st=1675500458~exp=1675501058~hmac=669738210490d25a6665907c953ebc3e7e70a755d6664f6b347666a3e5980593"
+          alt="hand-holding-chopsticks-with-dumpling" />
+      </div>
+      <div class="content">
+        <h3>Best Food In The Country</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem at
+          quis ducimus excepturi laborum veniam maxime soluta suscipit? Quae,
+          excepturi! Eos quas dignissimos nulla minus reprehenderit vitae amet
+          nesciunt ratione.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur
+          quae accusantium quod at beatae qui magni unde nostrum velit magnam
+          tempora sunt omnis minima iure, atque veniam laboriosam corporis ex!
+        </p>
+        <div class="icons-container">
+          <div class="icons">
+            <i class="fas fa-shipping-fast"> </i>
+            <span>Free Delivery</span>
+          </div>
+          <div class="icons">
+            <i class="fas fa-rupee-sign"> </i>
+            <span>Easy Payment</span>
+          </div>
+          <div class="icons">
+            <i class="fas fa-headset"> </i>
+            <span>24/7 Service</span>
+          </div>
+        </div>
+
+        <a href="#" class="btn">Learn More...</a>
+      </div>
+    </div>
+  </section>
+  <!-- About section ends her -->
+
+  <!-- Menu Section starts here  -->
+
+  <section class="menu" id="menu">
+    <h3 class="sub-heading">Our Menu</h3>
+    <h3 class="heading">Today's Foodie speciality</h3>
+
+    <div class="box-container">
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-photo/aloo-paratha-gobi-paratha-also-known-as-potato-cauliflower-stuffed-flatbread-dish-originating-from-indian-subcontinent_466689-76134.jpg?w=596&t=st=1675503494~exp=1675504094~hmac=34e6d26802b292c28dcc97c32d0aef4344fc5de2daa904df5824b35df3fa909e"
+            alt="aloo-paratha-gobi-paratha-also-known-as-potato-cauliflower-stuffed-flatbread-dish-originating-from-indian-subcontinent" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">59.00 /-</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-photo/mixed-dal-vada-pakoda-is-indian-snack-served-with-tomato-ketchup-green-chutney_466689-72850.jpg?t=st=1675503474~exp=1675504074~hmac=6922fce7dc3b079636d77ef820f3fee431630d8ecb396cfd9daab57938d2cbbf"
+            alt="mixed-dal-vada-pakoda-is-indian-snack-served-with-tomato-ketchup-green-chutney" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">90.00 /-</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-photo/gujarati-khaman-dhokla-made-using-chana-dal-served-with-green-chutney-selective-focus_466689-71727.jpg?t=st=1675503676~exp=1675504276~hmac=e5ed6e2836a9cc7c381f37dc5ba5e4f12964962d2ad8b0c93f771f731fd4ef2f"
+            alt="gujarati-khaman-dhokla-made-using-chana-dal-served-with-green-chutney" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">95.00 /-</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-photo/aalu-bonda-is-indian-pakora-batata-vada-served-with-ketchup_466689-72688.jpg?t=st=1675503676~exp=1675504276~hmac=b8bd6f09a6b6c400e8952de52afe96fb8d352fb4eee9c3126ca75d9bada5d226"
+            alt="aalu-bonda-is-indian-pakora-batata-vada-served-with-ketchup" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">99.00 /-</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-photo/anda-bhurji-masala-scrambled-egg_466689-94902.jpg?w=596&t=st=1675503780~exp=1675504380~hmac=ff19abb9e5caf5a96f7f05cf47f666f0e033285ffcc4e6514cbd95a2588aba44"
+            alt="anda-bhurji-masala-scrambled-egg" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">33.00 /-</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-photo/stuffed-chilli-pakora-mirchi-pakoda-mirchi-vada-extremely-delicious-mouth-watering-snack-pakistani-indian-people_466689-72863.jpg?t=st=1675503817~exp=1675504417~hmac=f19e3e4e3f57deef607e32875e4a70cb3ba6ce69d2f15c30ed902c11f4e3bd1f"
+            alt="stuffed-chilli-pakora-mirchi-pakoda-mirchi-vada-extremely-delicious-mouth-watering-snack" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">69.00 /-</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-photo/baked-chicken-wings-asian-style-tomatoes-sauce-plate_2829-10657.jpg?w=596&t=st=1675503917~exp=1675504517~hmac=4b1e4cfe08e785e18c347e0f5fd5c3fd9033c1c46eb3292726cc459f82ab611d"
+            alt="baked-chicken-wings-asian-style-tomatoes-sauce-plate" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">89.00 /-</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img src="https://img.freepik.com/premium-photo/idli-with-sambar-bowl-white_136354-209.jpg?w=596"
+            alt="idli-with-sambar-bowl-white" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">59.00 /-</span>
+        </div>
+      </div>
+      <div class="box">
+        <div class="image">
+          <img
+            src="https://img.freepik.com/free-photo/murukku-also-known-as-chakli-south-indian-traditional-vegetarian-snack_466689-73231.jpg?t=st=1675504097~exp=1675504697~hmac=f1d51fd45e6d4659bc9fea452575accc4798e61a007ba02d5273921849a80996"
+            alt="murukku-also-known-as-chakli-south-indian-traditional-vegetarian-snack" />
+          <a href="#" class="fas fa-heart"></a>
+        </div>
+
+        <div class="content">
+          <div class="stars">
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star"></i>
+            <i class="fa fa-star-half-alt"></i>
+          </div>
+          <h3>Delicious Food</h3>
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis,
+            magnam!
+          </p>
+          <a href="#" class="btn"> Add To Cart</a>
+          <span class="price">49.00 /-</span>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Menu Section Ends here  -->
+
+
+  <!-- REview Section Starts Here  -->
+
+
+  <section class="review" id="review">
+    <h3 class="sub-heading">Customer's Review</h3>
+    <h3 class="heading">What They Say</h3>
+
+    <div class="swiper-container review-slider">
+
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <img
+              src="https://img.freepik.com/free-photo/pleased-satisfied-young-female-model-makes-zero-gesture-wears-transparent-glasses-has-long-dark-hair_273609-17999.jpg?w=296&t=st=1675507175~exp=1675507775~hmac=e46263998269330af932ea08b131856be4acbfc67da66a9d6e20a3ae5a7fefbf"
+              alt="">
+            <div class="user-info">
+              <h3>
+                Nayanika Joshi
+              </h3>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusantium veritatis sed exercitationem
+            eum architecto eius mollitia minima incidunt tempora, error, ad sapiente voluptates tenetur, earum
+            perferendis nihil corporis nisi!</p>
+        </div>
+
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <img
+              src="https://img.freepik.com/free-photo/pleased-satisfied-young-female-model-makes-zero-gesture-wears-transparent-glasses-has-long-dark-hair_273609-17999.jpg?w=296&t=st=1675507175~exp=1675507775~hmac=e46263998269330af932ea08b131856be4acbfc67da66a9d6e20a3ae5a7fefbf"
+              alt="">
+            <div class="user-info">
+              <h3>
+                Nayanika Joshi
+              </h3>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusantium veritatis sed exercitationem
+            eum architecto eius mollitia minima incidunt tempora, error, ad sapiente voluptates tenetur, earum
+            perferendis nihil corporis nisi!</p>
+        </div>
+
+        <div class="swiper-slide slide">
+          <i class="fas fa-quote-right"></i>
+          <div class="user">
+            <img
+              src="https://img.freepik.com/free-photo/pleased-satisfied-young-female-model-makes-zero-gesture-wears-transparent-glasses-has-long-dark-hair_273609-17999.jpg?w=296&t=st=1675507175~exp=1675507775~hmac=e46263998269330af932ea08b131856be4acbfc67da66a9d6e20a3ae5a7fefbf"
+              alt="">
+            <div class="user-info">
+              <h3>
+                Nayanika Joshi
+              </h3>
+              <div class="stars">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star-half-alt"></i>
+              </div>
+            </div>
+          </div>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione accusantium veritatis sed exercitationem
+            eum architecto eius mollitia minima incidunt tempora, error, ad sapiente voluptates tenetur, earum
+            perferendis nihil corporis nisi!</p>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <!-- Review Section Ends Here  -->
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script src="./script.js"></script>
+
 </html>
