@@ -6,9 +6,25 @@ menu.addEventListener("click", () => {
   navbar.classList.toggle("active");
 });
 
+let section = document.querySelectorAll('section');
+let navlinks = document.querySelectorAll('header .navbar a');
+
 window.onscroll = () => {
   menu.classList.remove("fa-times");
   navbar.classList.remove("active");
+  section.forEach(element => {
+    let top = window.scrollY;
+    let height = element.offsetHeight;
+    let offset = element.offsetTop - 150;
+    let id = element.getAttribute('id');
+
+    if (top => offset && top < offset + height) {
+      navLinks.forEach(links => {
+        links.classList.remove('active');
+        document.querySelector('header .navbar a[href*='+id+']').classList.add('active');
+      });
+    }
+  });
 };
 
 document.querySelector("#search-icon").addEventListener("click", () => {
@@ -42,21 +58,34 @@ var swiper = new Swiper(".review-slider", {
     disableOnInteraction: false,
   },
   loop: true,
-breakpoints:
-{
-  0:{
-    slidesPerView :1,
-  },
-  640:{
-    slidesPerView :2,
-  },
-  768:
+  breakpoints:
   {
-    slidesPerView :2,
+    0: {
+      slidesPerView: 1,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    768:
+    {
+      slidesPerView: 2,
+    },
+    1024:
+    {
+      slidesPerView: 3,
+    },
   },
-  1024:
-  {
-    slidesPerView :3,
-  },
-},
 });
+
+
+function loader()
+{
+  document.querySelector('.loader-container').classList.add('fade-out');
+}
+
+function fadeOut()
+{
+setInterval(loader, 3000);
+}
+
+window.onload = fadeOut;
